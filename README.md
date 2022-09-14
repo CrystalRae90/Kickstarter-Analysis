@@ -2,17 +2,23 @@
 
 ## Overview of Project 
 ### Purpose
-The purpose of the assignment was to analyze the given kickstarter data to determine if there was trends based on their funding goal as well as the months related to project launches. All analysis were focused on campaigns under the parent category of theater. 
+The purpose of the assignment was to analyze the given kickstarter data to determine if there was trends based on their funding goal as well as the months related to project launches. All analysis were focused on campaigns under the parent category of theater and/or subcategory of plays. 
 
 ## Analysis and Challenges 
 ### Analysis of Outcomes Based on Launch Date
-To start the analysis, we needed to look at the outcome of the project based on the Launch date. A pivot table was created in order to show the count of the projects based on outcome. When the pivot was created, adding the launch date defaults the data set to be separated by years and quarters, along with the exact date. 
+To start the analysis, we needed to look at the outcome of the project based on the Launch date. A pivot table was created in order to show the count of the projects based on outcome. When the pivot was created, adding the launch date defaults the data set to be separated by years and quarters, along with the exact date. As we wanted to see if there was any impact to the outcome based on the launch month, the years, and quarters fields were removed from the rows of the pivot table. This created a default grouping by month. 
+
+When graphing the data, we wanted to be able to see by month the count of campaigns by outcome. A line graph was used as it was able to clearly indicate any trends across the months. 
 
 ### Analysis of Ourcomes Based on Goals
-As we wanted to see if there was any impact to the outcome based on the launch month, the years, and quarters fields were removed from the rows of the pivot table. This created a default grouping by month. 
+For the subcategory plays, we looked at the success, failure, and cancellation rates split by goals. In order to do so, we used a series of formulas to count each instance. A table was created by splitting goals into five thousand increments and counting based on the criteria given. Once the totals were determined in each category, new columns were created and percentages were added. 
+
+A line graph was also chosen to illustrate the trends based on increments. Each line represented the outcome, with the goals and percentags shown on the X and Y axis' respectively., 
 
 ### Challenges and Difficulties Encountered
 Challenges that one may encounter with the pivot would be the formatting of the dates. If there was any dates in the data set not formatted as a date, there would mostly likely be issues when creating the pivot table. The incorrectly formatted data would have to be corrected in order for the pivot to be reflected correctly. Another potential challenge would be if all the data was not selected when creating the pivot chart. This would cause not all the data to populate in the chart and to be incomplete. 
+
+Potential challenges would also be selecting the wrong graph type. In the analysis based on goals, I initally selected a stacked line graph which caused problems as I was unable to see the true percentages of each category. This type of graph was not helpful in my analysis and only when modified to a normal line graph, was I able to see the correct trend. 
 
 ## Results 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
